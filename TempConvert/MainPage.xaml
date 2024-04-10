@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TempConvert.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label Text="INFO350: Enter temperature:" FontSize="18" />
+            <HorizontalStackLayout Padding="15" Spacing ="15">
+                <Label Text="Celsius:" 
+                       FontSize="18" HorizontalOptions="Center" />
+                <Entry x:Name="CelsiusEntry" Placeholder="e.g., 20" 
+                       Keyboard="Numeric" HorizontalOptions="Center" />
+                <Button Text=">" Clicked="SwitchDirectionClicked" HorizontalOptions="Center" />
+                <Label Text="Fahrenheit: " />
+                <Entry x:Name="FahrenheitEntry" Keyboard="Numeric" FontSize="18" HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+            
+            <Button Text="Convert"
+                Clicked="ConvertButton_Clicked"
+                HorizontalOptions="Center" />
+
+            <Label x:Name="ErrorTextField" Text="" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
