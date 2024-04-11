@@ -14,7 +14,7 @@
                        FontSize="18" HorizontalOptions="Center" />
                 <Entry x:Name="CelsiusEntry" Placeholder="e.g., 20" 
                        Keyboard="Numeric" HorizontalOptions="Center" />
-                <Button Text=">" Clicked="SwitchDirectionClicked" HorizontalOptions="Center" />
+                <Button x:Name="ConversionToggle" Text=">" Clicked="SwitchDirectionClicked" HorizontalOptions="Center" />
                 <Label Text="Fahrenheit: " />
                 <Entry x:Name="FahrenheitEntry" Keyboard="Numeric" FontSize="18" HorizontalOptions="Center" />
             </HorizontalStackLayout>
